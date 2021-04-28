@@ -50,14 +50,14 @@ function t3(codeStack: CodeStack, resultStack: ResultStack) {
 const tests: { [key: string]: Expression } = {
   1: { type: "Num", val: 2 },
   2: {
-    type: "Expression",
+    type: "Expression", // 9-4
     val: [
       { type: "Num", val: 9 },
       { type: "Operator", val: "-" },
       { type: "Num", val: 4 },
     ],
   }, //5
-  4: {
+  4: { //(4/2)*(5+2)
     type: "Expression",
     val: [
       {
